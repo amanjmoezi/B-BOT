@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+body {
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #0f9ae0 0%, #16fff6 100%);
+  transition: .5s;
+}
+.bBOT {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 240px;
+}
+.bBOT.musicLi
+{
+  position: absolute;
+  bottom: -200px;
+  right:  0;
+  width: 300px;
+}
+.bBOT.musicLi .eye
+{
+  width: 60px !important;
+  height: 80px !important;
+}
+.bBOT.musicLi .eye-box
+{
+  padding: 0;
+}
+.eye-box {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 400px;
+  position: absolute;
+  top: 35%;
+}
+.eye-box .eye {
+  width: 80px;
+  height: 120px;
+  border-radius: 15px;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: visible;
+  transition: 0.1s;
+}
+.eye-box .eye.eye-white
+{
+  background-color: white ;
+}
+.mouth
+{
+  background-color: white !important;
+}
+.mouth {
+  width: 100px;
+  height: 5px;
+  transition: 0.1s;
+  background-color: #1a1a1a;
+}
+@media screen and (max-width: 480px) {
+  .eye-box {
+    padding: 0;
+  }
+}
+.texts
+{
+  position: absolute;
+  bottom: 150px;
+  font-size: 25px;
+  font-family: peyda;
+  font-weight: 1000;
+  color: white;
+  width: 200px;
+  mask: linear-gradient(black, transparent);
+}
+.texts.story
+{
+  height: 400px;
+  width: 400px;
+  /* bottom: 0; */
+  overflow-y: scroll;
+}
+.texts.story::-webkit-scrollbar
+{
+  display: none;
+}
+.typed-cursor
+{
+  display: none;
+}

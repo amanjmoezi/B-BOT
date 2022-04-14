@@ -26,9 +26,13 @@ recognition.onend = function() {
         bBOTmouth(1)
         setTimeout(() => {bBOTmouth(2)}, 200);setTimeout(() => {bBOTmouth(5)}, 300);setTimeout(() => {bBOTmouth()}, 500);
         textShow("نه و نمی خوام بدونم ")
+        resultVoice="";
     }else if(resultVoice=="بخند")
     {
-        reactionFace("laugh");
+        reaction("laugh");
+        resultVoice="";
+    }else if(resultVoice.slice(0,6)=="سرچ کن"&&resultVoice!="سرچ کن"){
+        reaction("search")
+        resultVoice="";
     }
-    resultVoice="";
 }

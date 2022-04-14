@@ -27,6 +27,7 @@ recognition.onend = function() {
             new Audio("sound/6.mp3").play();
             bBOTmouth(1)
             setTimeout(() => {bBOTmouth(2)}, 200);setTimeout(() => {bBOTmouth(5)}, 300);setTimeout(() => {bBOTmouth()}, 500);
+            textShow("نه بوگو")
         }else
         {
             new Audio("sound/5.mp3").play();

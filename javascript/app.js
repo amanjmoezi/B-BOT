@@ -22,16 +22,13 @@ recognition.start();
 recognition.onend = function() {
     recognition.start();
     if (resultVoice=="میدونی از چه رنگی خوشم میاد") {
-        FavColor = localStorage.getItem("FavColor")
-        if (FavColor===null) {
-            new Audio("sound/6.mp3").play();
-            bBOTmouth(1)
-            setTimeout(() => {bBOTmouth(2)}, 200);setTimeout(() => {bBOTmouth(5)}, 300);setTimeout(() => {bBOTmouth()}, 500);
-            textShow("نه بوگو")
-        }else
-        {
-            new Audio("sound/5.mp3").play();
-        }
-        resultVoice="";
+        new Audio("sound/6.mp3").play()               
+        bBOTmouth(1)
+        setTimeout(() => {bBOTmouth(2)}, 200);setTimeout(() => {bBOTmouth(5)}, 300);setTimeout(() => {bBOTmouth()}, 500);
+        textShow("نه و نمی خوام بدونم ")
+    }else if(resultVoice=="بخند")
+    {
+        reactionFace("laugh");
     }
+    resultVoice="";
 }

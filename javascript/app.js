@@ -22,17 +22,24 @@ recognition.start();
 recognition.onend = function() {
     recognition.start();
     if (resultVoice=="میدونی از چه رنگی خوشم میاد") {
+        resultVoice="";
+        reaction("restFace");
         new Audio("sound/6.mp3").play()               
         bBOTmouth(1)
         setTimeout(() => {bBOTmouth(2)}, 200);setTimeout(() => {bBOTmouth(5)}, 300);setTimeout(() => {bBOTmouth()}, 500);
         textShow("نه و نمی خوام بدونم ")
-        resultVoice="";
     }else if(resultVoice=="بخند")
     {
-        reaction("laugh");
+        reaction("restFace");
         resultVoice="";
+        reaction("laugh");
     }else if(resultVoice.slice(0,6)=="سرچ کن"&&resultVoice!="سرچ کن"){
+        reaction("restFace");
         reaction("search")
+        resultVoice="";
+    }else if(resultVoice=="یه داستان بگو"||resultVoice=="داستان بگو"){
+        
+        reaction("seyStory");
         resultVoice="";
     }
 }

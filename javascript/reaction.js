@@ -38,11 +38,16 @@ function reaction(inp) {
             });
             window.open(`https://google.com/search?q=${q}`, "", "width=600,height=900");
             break;
-        case "restFace":
+            case "restFace":
                 faceBBot.classList.remove("musicLi")
                 textShowsTag.classList.remove("story")
                 textShowsTag.innerText = "";
                 bBOTmouth();
                 break;
-            }
+                case "playChess":
+                    window.open(`https://www.chess.com/play/online`, "", "width=600,height=900");
+                break;
+
+
+        }
 }

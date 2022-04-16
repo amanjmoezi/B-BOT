@@ -49,6 +49,9 @@ recognition.onend = function() {
         textShow("خب به عنم😒😂");
         reaction("laugh");
         resultVoice="";
+    }else if(resultVoice=="یه دانستنی جالب بگو"||resultVoice=="یه دانستنی  بگو"||resultVoice=="یه دانستنی لطفاً"||resultVoice=="دانستنی بگو"){
+        reaction("seyToKnow");
+        resultVoice="";
     }
     
 }

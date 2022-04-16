@@ -1,3 +1,4 @@
+let req = new XMLHttpRequest();
 function reaction(inp) {
     switch (inp) {
         case "seyStory":
@@ -5,8 +6,19 @@ function reaction(inp) {
             textShowsTag.classList.add("story")
             new Audio("sound/4.mp3").play()
             setTimeout(() => {bBOTmouth(2)}, 200);setTimeout(() => {bBOTmouth(5)}, 300);setTimeout(() => {bBOTmouth()}, 500);
-            let req = new XMLHttpRequest();
-            req.open("GET","https://api.codebazan.ir/dastan/");
+            req.open("GET","http://api.codebazan.ir/dastan/");
+            req.onload = () =>{
+                let deta = req.response
+                textShow(deta)
+            }
+            req.send()
+            break;
+        case "seyToKnow":
+            faceBBot.classList.add("musicLi")
+            textShowsTag.classList.add("story")
+            new Audio("sound/4.mp3").play()
+            setTimeout(() => {bBOTmouth(2)}, 200);setTimeout(() => {bBOTmouth(5)}, 300);setTimeout(() => {bBOTmouth()}, 500);
+            req.open("GET","http://api.codebazan.ir/danestani/");
             req.onload = () =>{
                 let deta = req.response
                 textShow(deta)

@@ -103,3 +103,26 @@ body {
 {
   display: none;
 }
+.disconnect
+{
+  position: absolute;
+  z-index: -1;
+  width: 200px;
+  bottom: 50px;
+  animation: flash 1s infinite; 
+  display: none;
+}
+.flash
+{
+   animation: flash 1s infinite;
+}
+@keyframes flash {
+   0%
+   {
+      opacity:0;
+    }
+    50%
+    {
+     opacity: 1;
+    }
+}

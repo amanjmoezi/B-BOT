@@ -46,8 +46,6 @@ function reaction(inp) {
                 break;
                 case "playChess":
                     window.open(`https://www.chess.com/play/online`, "", "width=600,height=900");
-                    new Audio("sound/4.mp3").play()
-                    setTimeout(() => {bBOTmouth(2)}, 200);setTimeout(() => {bBOTmouth(5)}, 300);setTimeout(() => {bBOTmouth()}, 500);
                     textShow("😒حتما بزن بریم بیچاره بشی امانج")
                     break;
                     

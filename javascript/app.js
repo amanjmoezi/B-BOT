@@ -41,8 +41,8 @@ recognition.onend = function() {
         
         reaction("seyStory");
         resultVoice="";
-    }else if(resultVoice=="بیا شطرنج"||resultVoice=="حاجی بیا بریم شطرنج"){
-        
+    }else if(resultVoice=="بیا شطرنج"||resultVoice=="حاجی بیا بریم شطرنج"||resultVoice=="بریم شطرنج"||resultVoice=="حاجی بزن بریم شطرنج"){
+        reaction("laugh");
         reaction("playChess");
         resultVoice="";
     }else if(resultVoice=="ر***"){

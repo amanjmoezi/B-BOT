@@ -50,4 +50,15 @@ recognition.onend = function() {
         reaction("laugh");
         resultVoice="";
     }
+    
 }
+setInterval(() => {
+    if (navigator.onLine==false) {
+            new Audio("sound/7.mp3").play();
+        document.querySelector(".disconnect").style.display = `block`;
+            
+    }else
+    {
+        document.querySelector(".disconnect").style.display = `none`;
+    }    
+}, 3000);

@@ -41,5 +41,13 @@ recognition.onend = function() {
         
         reaction("seyStory");
         resultVoice="";
+    }else if(resultVoice=="بیا شطرنج"||resultVoice=="حاجی بیا بریم شطرنج"){
+        
+        reaction("playChess");
+        resultVoice="";
+    }else if(resultVoice=="ر***"){
+        textShow("خب به عنم😒😂");
+        reaction("laugh");
+        resultVoice="";
     }
 }

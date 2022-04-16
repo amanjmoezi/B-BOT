@@ -5,7 +5,13 @@ function reaction(inp) {
             textShowsTag.classList.add("story")
             new Audio("sound/4.mp3").play()
             setTimeout(() => {bBOTmouth(2)}, 200);setTimeout(() => {bBOTmouth(5)}, 300);setTimeout(() => {bBOTmouth()}, 500);
-            textShow(storys[Math.floor(Math.random() *storys.length)]) 
+            let req = new XMLHttpRequest();
+            req.open("GET","https://api.codebazan.ir/dastan/");
+            req.onload = () =>{
+                let deta = req.response
+                textShow(deta)
+            }
+            req.send()
             break;
         case "laugh":
             new Audio("sound/5.mp3").play();

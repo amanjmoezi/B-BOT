@@ -45,10 +45,6 @@ recognition.onend = function() {
         reaction("laugh");
         reaction("playChess");
         resultVoice="";
-    }else if(resultVoice=="ر***"){
-        textShow("خب به عنم😒😂");
-        reaction("laugh");
-        resultVoice="";
     }else if(resultVoice=="یه دانستنی جالب بگو"||resultVoice=="یه دانستنی  بگو"||resultVoice=="یه دانستنی لطفاً"||resultVoice=="دانستنی بگو"){
         reaction("seyToKnow");
         resultVoice="";

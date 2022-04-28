@@ -62,6 +62,10 @@ function reaction(inp) {
                 textShowsTag.innerText = "";
                 bBOTmouth();
                 break;
+                case "Hello":
+                    new Audio("sound/1.mp3").play()
+                    bBOTmouth(2),setTimeout(()=>{bBOTmouth(1)},100),setTimeout(()=>{bBOTmouth(2)},200),setTimeout(()=>{bBOTmouth(5)},300),setTimeout(()=>{bBOTmouth(4)},400),setTimeout(()=>{bBOTmouth(6)},500),setTimeout(()=>{bBOTmouth()},600);
+                break;
                 case "playChess":
                     window.open(`https://www.chess.com/play/online`, "", "width=600,height=900");
                     textShow("😒حتما بزن بریم بیچاره بشی امانج")

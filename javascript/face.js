@@ -6,4 +6,4 @@ function closeEyes() {
         }, 120);
     });
 }
-setInterval(closeEyes, 2800);
+const closeeyes = setInterval(closeEyes, 2800);
